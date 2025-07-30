@@ -10,7 +10,7 @@ const profileRoutes = require("./routes/profileRoutes");
 
 app.use(express.json());
 app.use(cors({
-  origin: 'https://vercel.com/bhautikrathod9s-projects/task-manager/7r8QWqvzgX8Cn3XoVYixMcWwCNWC',
+  origin: 'https://task-manager-peach-omega.vercel.app/login',
   credentials: true,
 }));
 
