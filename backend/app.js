@@ -9,10 +9,7 @@ const taskRoutes = require("./routes/taskRoutes");
 const profileRoutes = require("./routes/profileRoutes");
 
 app.use(express.json());
-app.use(cors({
-  origin: 'https://task-manager-peach-omega.vercel.app/login',
-  credentials: true,
-}));
+app.use(cors());
 
 const mongoUrl = process.env.MONGODB_URL;
 mongoose.connect(mongoUrl, err => {
